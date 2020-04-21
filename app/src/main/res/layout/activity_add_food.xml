@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient1"
+    tools:context=".AddFoodActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="40dp"
+        android:gravity="center"
+        android:paddingBottom="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnDone"
+        app:layout_constraintEnd_toStartOf="@+id/description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/button"
+            app:cardCornerRadius="8dp"
+            android:layout_width="320dp"
+            android:layout_height="570dp"
+            android:background="@color/whitecolor" >
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:id="@+id/back"
+            android:layout_width="63dp"
+            android:layout_height="43dp"
+            android:layout_gravity="left" />
+
+    <EditText
+        android:id="@+id/txt_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Notes"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txt_kcals"
+        android:digits="1234567890"
+        android:inputType="number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Calories" />
+
+    <EditText
+        android:id="@+id/txt_carbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Carbohydrates"
+        android:digits="1234567890"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/txt_protein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="Protein"
+        android:digits="1234567890"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/txt_fats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Fats "
+        android:digits="1234567890"
+        android:inputType="number" />
+
+        <Button
+            android:id="@+id/addFood"
+            android:layout_marginTop="20dp"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:textColor="@color/whitecolor"
+            android:background="@drawable/btn4"
+            android:elevation="5dp"
+            android:text="Add Food"/>
+        <Button
+            android:id="@+id/delete"
+            android:layout_marginTop="10dp"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:textColor="@color/whitecolor"
+            android:background="@drawable/joinbtn"
+            android:elevation="5dp"
+            android:text="Remove Food"  />
+
+        <ListView
+        android:id="@+id/listView"
+            android:layout_marginTop="20dp"
+            android:layout_width="320dp"
+        android:layout_height="180dp">
+        </ListView>
+
+    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

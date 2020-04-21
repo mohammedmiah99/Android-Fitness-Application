@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient1"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".AddToBlogActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:id="@+id/btn_back99"
+            android:layout_width="63dp"
+            android:layout_height="43dp"
+            android:layout_gravity="left" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post a Message\n to other Users"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/blackcolor"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/txt_title11"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint=" Title"
+            android:layout_marginTop="35dp"
+            android:paddingLeft="15dp"
+            android:inputType="text"
+            android:textColorHint="@color/greycolor"
+            android:elevation="5dp"
+            android:background="@drawable/btn5" />
+        <EditText
+            android:id="@+id/txt_blog11"
+            android:layout_width="match_parent"
+            android:layout_height="345dp"
+            android:hint=" Write your message..."
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:textColorHint="@color/greycolor"
+            android:elevation="5dp"
+            android:background="@drawable/btn5" />
+        <Button
+            android:id="@+id/btn_submit11"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:text="Submit"
+            android:textColor="@color/whitecolor"
+            android:textAllCaps="false"
+            android:layout_marginTop="50dp"
+            android:elevation="5dp"
+            android:background="@drawable/btn4"/>
+
+    </LinearLayout>
+
+</ScrollView>

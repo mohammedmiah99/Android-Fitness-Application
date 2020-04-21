@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient1"
+    tools:context=".LegWrktActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+
+    <TextView
+        android:id="@+id/myWorkout"
+        android:paddingTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Workouts"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textSize="35sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:paddingTop="100dp"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/backArrow2"
+        android:src="@drawable/ic_arrow_back_black_24dp"
+        android:layout_width="63dp"
+        android:clickable="true"
+        android:layout_height="43dp"
+        android:layout_gravity="left" />
+</RelativeLayout>
+
+</ScrollView>

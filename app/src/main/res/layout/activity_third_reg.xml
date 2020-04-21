@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient1"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".ThirdRegActivity">
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your Details"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textColor="@color/blackcolor"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:paddingLeft="15dp"
+            android:layout_marginLeft="35dp"
+            android:text="What is your Goal?"
+            android:textColorHint="@color/greycolor"
+            android:elevation="5dp"
+            android:textColor="@color/blackcolor"
+            android:textSize="15dp"/>
+        <Spinner
+            android:id="@+id/spin_goal"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:entries="@array/goal"
+            android:hint=" Your Goal"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:textColorHint="@color/greycolor"
+            android:elevation="5dp"
+            android:background="@drawable/btn" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:layout_marginLeft="35dp"
+            android:text="What are your Activity Levels?"
+            android:textColorHint="@color/greycolor"
+            android:elevation="5dp"
+            android:textColor="@color/blackcolor"
+            android:textSize="15dp"/>
+        <Spinner
+            android:id="@+id/spin_activity"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:entries="@array/activity"
+            android:hint=" Your Activity Level"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:textColorHint="@color/greycolor"
+            android:elevation="5dp"
+            android:background="@drawable/btn" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:layout_marginLeft="35dp"
+            android:text="What is your Experience Level?"
+            android:textColorHint="@color/greycolor"
+            android:elevation="5dp"
+            android:textColor="@color/blackcolor"
+            android:textSize="15dp"/>
+        <Spinner
+            android:id="@+id/spin_experience"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:entries="@array/experience"
+            android:hint=" Your Experience"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:textColorHint="@color/greycolor"
+            android:elevation="5dp"
+            android:background="@drawable/btn"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:layout_marginLeft="35dp"
+            android:text="How many Workouts per Week?"
+            android:textColorHint="@color/greycolor"
+            android:elevation="5dp"
+            android:textColor="@color/blackcolor"
+            android:textSize="15dp"/>
+        <Spinner
+            android:id="@+id/spin_amount"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:hint=" Amount per Week"
+            android:entries="@array/amount"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:textColorHint="@color/greycolor"
+            android:elevation="5dp"
+            android:background="@drawable/btn"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:layout_marginLeft="35dp"
+            android:text="Are you a Personal Trainer?"
+            android:textColorHint="@color/greycolor"
+            android:elevation="5dp"
+            android:textColor="@color/blackcolor"
+            android:textSize="15dp"/>
+        <Spinner
+            android:id="@+id/spin_pt"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:entries="@array/pt"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:textColorHint="@color/greycolor"
+            android:elevation="5dp"
+            android:background="@drawable/btn"
+            />
+        <Button
+            android:id="@+id/reg"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:text="Register"
+            android:textColor="@color/whitecolor"
+            android:textAllCaps="false"
+            android:layout_marginTop="35dp"
+            android:elevation="5dp"
+            android:background="@drawable/btn4"/>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

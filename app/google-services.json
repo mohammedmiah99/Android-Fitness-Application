@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "64234459960",
+    "firebase_url": "https://myfitapp-e30fc.firebaseio.com",
+    "project_id": "myfitapp-e30fc",
+    "storage_bucket": "myfitapp-e30fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:64234459960:android:adb389b943687ffbf2e7cd",
+        "android_client_info": {
+          "package_name": "com.miah.myfitapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "64234459960-e8cotfhv1vmmfmdhu5p5usef4iu4pal9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.miah.myfitapp",
+            "certificate_hash": "6bcb5fa3a50f513b8774fd4476365e3b24cd28ff"
+          }
+        },
+        {
+          "client_id": "64234459960-bouet5ck4ehv12eqv3kr847t966hutiv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDulMNlRC2iAQCw1cQpcG0vnQ7xPHyrQzs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "64234459960-bouet5ck4ehv12eqv3kr847t966hutiv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

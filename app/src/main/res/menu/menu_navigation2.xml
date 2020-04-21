@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/weight22"
+        android:title="Weight"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/strength22"
+        android:title="Strength"
+        android:icon="@drawable/ic_event_note"/>
+
+</menu>

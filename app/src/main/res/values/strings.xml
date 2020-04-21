@@ -1,0 +1,309 @@
+<resources>
+    <string name="app_name">myfitapp</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <array name="activity">
+        <item>Sedentary</item>
+        <item>Lightly Active</item>
+        <item>Moderately Active</item>
+        <item>Very Active</item>
+        <item>Super Active</item>
+    </array>
+    <array name="pt">
+        <item>No</item>
+        <item>Yes</item>
+    </array>
+
+    <array name="experience">
+        <item>Novice</item>
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Advanced</item>
+    </array>
+
+    <array name="amount">
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"4"</item>
+        <item>"5"</item>
+        <item>"6"</item>
+    </array>
+
+    <array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </array>
+    <array name="goal">
+        <item>Gain Muscle</item>
+        <item>Lose Weight</item>
+        <item>Maintenance</item>
+    </array>
+
+    <string-array name="exercises">
+        <item>Pull Up</item>
+        <item>Dumbbell Row</item>
+        <item>Face Pull</item>
+        <item>Reverse Curl</item>
+        <item>Hammer Curl</item>
+        <item>Supinated Curl</item>
+    </string-array>
+
+    <string-array name="description">
+        <item>PULL YOUR ELBOWS DOWN AND IN, MINIMIZE SWINGING. REST: 2-3 MINS, RPE/%1RM: 8</item>
+        <item>PULL YOUR ELBOW BACK AND IN. ONE ARM</item>
+        <item>PULL ELBOWS DOWN AND IN. RETRACT YOUR SCAPULAE</item>
+        <item>A1: SUPERSET WITH A2, A3, NO REST IN BETWEEN</item>
+        <item>A2: SUPERSET WITH A3, NO REST IN BETWEEN</item>
+        <item>A3: NOW REST AND REPEAT</item>
+    </string-array>
+
+    <string-array name="sets">
+        <item>"4"</item>
+        <item>"4"</item>
+        <item>"3"</item>
+        <item>"3"</item>
+        <item>"3"</item>
+        <item>"3"</item>
+
+    </string-array>
+    <string-array name="reps">
+        <item>"6-8"</item>
+        <item>"8-10"</item>
+        <item>"20"</item>
+        <item>"8"</item>
+        <item>"8"</item>
+        <item>"8"</item>
+    </string-array>
+
+    <string-array name="timer">
+        <item>"120000"</item>
+        <item>"5000"</item>
+        <item>"5000"</item>
+        <item>"5000"</item>
+        <item>"5000"</item>
+        <item>"5000"</item>
+    </string-array>
+
+    <string-array name="exercisesLeg">
+        <item>Back Squat</item>
+        <item>Deadlift</item>
+        <item>BB Hip Thrust</item>
+        <item>DB Walking Lunge</item>
+        <item>Leg Extensions</item>
+        <item>Seated Leg Curl</item>
+        <item>Calf Raise</item>
+    </string-array>
+
+    <string-array name="descriptionLeg">
+        <item>"SIT BACK AND DOWN, 15° TOE FLARE, DRIVE YOUR KNEES OUT LATERALLY. RPE/%1RM: 72.5%"</item>
+        <item>"BRACE YOUR LATS, CHEST TALL, HIPS HIGH, PULL THE SLACK OUT OF THE BAR PRIORTO MOVING IT OFF THE GROUND. RPE/%1RM: 65%"</item>
+        <item>"TUCK YOUR CHIN AND RIB CAGE DOWN, ONLY MOVE YOUR HIPS. USE A PAD. RPE/%1RM: 8"</item>
+        <item>"TAKE MEDIUM STRIDES, MINIMIZE THE AMOUNT YOU PUSH OFF YOUR REAR LEG. RPE/%1RM: 9"</item>
+        <item>"FOCUS ON SQUEEZING YOUR QUADS TO MOVE THE WEIGHT. RPE/%1RM: 9"</item>
+        <item>"FOCUS ON SQUEEZING YOUR HAMSTRINGS TO MOVE THE WEIGHT. RPE/%1RM: 9"</item>
+        <item>"PRESS ALL THE WAY UP TO YOUR TOES, STRETCH YOUR CALVES AT THE TO BOTTOM, DON'T BOUNCE. RPE/%1RM: 7"</item>
+    </string-array>
+    <string-array name="setsLeg">
+        <item>"4"</item>
+        <item>"3"</item>
+        <item>"3"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"3"</item>
+        <item>"3"</item>
+    </string-array>
+    <string-array name="repsLeg">
+        <item>"6"</item>
+        <item>"10"</item>
+        <item>"10-12"</item>
+        <item>"40"</item>
+        <item>"15"</item>
+        <item>"15"</item>
+        <item>"10"</item>
+    </string-array>
+
+    <string-array name="timerLeg">
+        <item>"180000"</item>
+        <item>"180000"</item>
+        <item>"120000"</item>
+        <item>"60000"</item>
+        <item>"60000"</item>
+        <item>"60000"</item>
+        <item>"60000"</item>
+    </string-array>
+
+    <string-array name="url">
+        <item>https://www.youtube.com/watch?v=ylVmNQlKdAI</item>
+        <item>https://www.youtube.com/watch?v=pYcpY20QaE8</item>
+        <item>https://www.youtube.com/watch?v=rep-qVOkqgk</item>
+        <item>https://www.youtube.com/watch?v=didEQUuieRQ</item>
+        <item>https://www.youtube.com/watch?v=zC3nLlEvin4</item>
+        <item>https://www.youtube.com/watch?v=sAq_ocpRh_I</item>
+    </string-array>
+
+    <string-array name="urlLegs">
+        <item>https://www.youtube.com/watch?v=SW_C1A-rejs</item>
+        <item>https://www.youtube.com/watch?v=n454SpMZRt8</item>
+        <item>https://www.youtube.com/watch?v=Zp26q4BY5HE</item>
+        <item>https://www.youtube.com/watch?v=D7KaRcUTQeE</item>
+        <item>https://www.youtube.com/watch?v=YyvSfVjQeL0</item>
+        <item>https://www.youtube.com/watch?v=ELOCsoDSmrg</item>
+        <item>https://www.youtube.com/watch?v=YMmgqO8Jo-k</item>
+    </string-array>
+
+    <string-array name="exercisesPush">
+        <item>Barbell Bench Press</item>
+        <item>Dumbbell Seated Shoulder Press</item>
+        <item>Weighted Dip</item>
+        <item>Low-To-High Cable Flye</item>
+        <item>Dumbbell Isolateral Skull Crusher</item>
+        <item>Dumbbell Lateral Raise</item>
+    </string-array>
+
+    <string-array name="descriptionPush">
+        <item>"TUCK ELBOWS AT A 45° ANGLE, SQUEEZE YOUR SHOULDER BLADES AND STAY FIRM ON THE BENCH RPE/%1RM: 75%"</item>
+        <item>"BRING THE DUMBBELL ALL THE WAY DOWN, KEEP YOUR TORSO UPRIGHT. RPE/%1RM: 7"</item>
+        <item>"TUCK YOUR ELBOWS AT A 45° ANGLE, LEAN YOUR TORSO FORWARD 15°, KEEP YOUR SCAPULAE RETRACTED. RPE/%1RM: 7"</item>
+        <item>"PULL YOUR ELBOWS (NOT HANDS) UP AND IN WHILE SLIGHTLY INTERNALLY ROTATING YOUR SHOULDER. RPE/%1RM: 8"</item>
+        <item>"USE 1 DUMBBELL IN EACH HAND. PRESS THE DUMBBELL OVER YOUR HEAD. RPE/%1RM: 8"</item>
+        <item>"TILT THE DUMBBELL SUCH THAT YOUR PINKY COMES UP FIRST. RPE/%1RM: 8"</item>
+    </string-array>
+    <string-array name="setsPush">
+        <item>"4"</item>
+        <item>"3"</item>
+        <item>"3"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"3"</item>
+    </string-array>
+    <string-array name="repsPush">
+        <item>"4"</item>
+        <item>"8-10"</item>
+        <item>"6-10"</item>
+        <item>"12-15"</item>
+        <item>"12"</item>
+        <item>"15"</item>
+    </string-array>
+
+    <string-array name="timerPush">
+        <item>"120000"</item>
+        <item>"120000"</item>
+        <item>"60000"</item>
+        <item>"60000"</item>
+        <item>"60000"</item>
+        <item>"60000"</item>
+    </string-array>
+    <string-array name="urlPush">
+        <item>https://www.youtube.com/watch?v=rT7DgCr-3pg%26t=15s</item>
+        <item>https://www.youtube.com/watch?v=qEwKCR5JCog</item>
+        <item>https://www.youtube.com/watch?v=2i3o0bFZT_s</item>
+        <item>https://www.youtube.com/watch?v=M1N804yWA-8</item>
+        <item>https://www.youtube.com/watch?v=ir5PsbniVSc%26t=1s</item>
+        <item>https://www.youtube.com/watch?v=3VcKaXpzqRo%26t=1s</item>
+    </string-array>
+
+    <string-array name="exercisesUpper">
+        <item>Barbell Bench Press</item>
+        <item>Lat PullDown</item>
+        <item>Pause Dumbbell Incline Press</item>
+        <item>Barbell Bent Over Row</item>
+        <item>Dumbbell Seated Shoulder Press</item>
+        <item>Dumbbell Lateral Raise</item>
+    </string-array>
+
+    <string-array name="descriptionUpper">
+        <item>"ELBOWS AT A 45° ANGLE. KEEP YOUR SCAPULAE RETRACTED AND DEPRESSED. RPE/%1RM: 70%"</item>
+        <item>"PULL YOUR ELBOWS DOWN AND IN. RPE/%1RM: 8"</item>
+        <item>"3-SECOND PAUSE. RPE/%1RM: 7"</item>
+        <item>"RPE/%1RM: 8"</item>
+        <item>"DON'T STOP IN BETWEEN REPS. RPE/%1RM: 8"</item>
+        <item>"TILT THE DUMBBELL SUCH THAT YOUR PINKY COMES UP FIRST. RPE/%1RM: 9"</item>
+    </string-array>
+    <string-array name="setsUpper">
+        <item>"3"</item>
+        <item>"3"</item>
+        <item>"3"</item>
+        <item>"3"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+    </string-array>
+    <string-array name="repsUpper">
+        <item>"6"</item>
+        <item>"10"</item>
+        <item>"8"</item>
+        <item>"10"</item>
+        <item>"12"</item>
+        <item>"12"</item>
+    </string-array>
+
+    <string-array name="timerUpper">
+        <item>"120000"</item>
+        <item>"120000"</item>
+        <item>"120000"</item>
+        <item>"120000"</item>
+        <item>"60000"</item>
+        <item>"60000"</item>
+    </string-array>
+    <string-array name="urlUpper">
+        <item>https://www.youtube.com/watch?v=rT7DgCr-3pg%26t=15s</item>
+        <item>https://www.youtube.com/watch?v=X5n55mMqSUs</item>
+        <item>https://www.youtube.com/watch?v=8iPEnn-ltC8</item>
+        <item>https://www.youtube.com/watch?v=9efgcAjQe7E</item>
+        <item>https://www.youtube.com/watch?v=qEwKCR5JCog%26t=1s</item>
+        <item>https://www.youtube.com/watch?v=3VcKaXpzqRo%26t=1s</item>
+    </string-array>
+
+    <string-array name="exercisesLower">
+        <item>Back Squat</item>
+        <item>Stiff Leg Deadlift</item>
+        <item>Leg Press</item>
+        <item>Good Morning</item>
+        <item>Standing Calf Raise</item>
+        <item>Leg Extension</item>
+    </string-array>
+
+    <string-array name="descriptionLower">
+        <item>"SIT BACK AND DOWN, 15° TOE FLARE, DRIVE YOUR KNEES OUT LATERALLY. RPE/%1RM: 75%"</item>
+        <item>"4-SECOND LOWERING PHASE. KEEP YOUR HIPS HIGH. RPE/%1RM: 7"</item>
+        <item>"DON'T STOP IN BETWEEN REPS. RPE/%1RM: 8"</item>
+        <item>"KEEP YOUR SPINE NEUTRAL. RPE/%1RM: 7"</item>
+        <item>"FIRST 6 REPS 3-SECOND LOWERING PHASE, LAST 6 REPS DON'T STOP BETWEEN REPS. RPE/%1RM: 8"</item>
+        <item>"BILATERAL CONCENTRIC, UNILATERAL ECCENTRIC. RPE/%1RM: 8"</item>
+    </string-array>
+    <string-array name="setsLower">
+        <item>"3"</item>
+        <item>"3"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"4"</item>
+        <item>"3"</item>
+    </string-array>
+    <string-array name="repsLower">
+        <item>"4"</item>
+        <item>"10"</item>
+        <item>"20"</item>
+        <item>"8"</item>
+        <item>"6"</item>
+        <item>"12"</item>
+    </string-array>
+
+    <string-array name="timerLower">
+        <item>"180000"</item>
+        <item>"120000"</item>
+        <item>"120000"</item>
+        <item>"60000"</item>
+        <item>"60000"</item>
+        <item>"60000"</item>
+    </string-array>
+    <string-array name="urlLower">
+        <item>https://www.youtube.com/watch?v=SW_C1A-rejs</item>
+        <item>https://www.youtube.com/watch?v=1uDiW5--rAE</item>
+        <item>https://www.youtube.com/watch?v=oujca3_Shgw</item>
+        <item>https://www.youtube.com/watch?v=5Xj6XUa77qc</item>
+        <item>https://www.youtube.com/watch?v=YMmgqO8Jo-k</item>
+        <item>https://www.youtube.com/watch?v=YyvSfVjQeL0</item>
+    </string-array>
+
+</resources>

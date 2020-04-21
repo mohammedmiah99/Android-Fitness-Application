@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitecolor"
+    tools:context=".WorkoutLogActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/bottom_navigation"
+            app:itemBackground="@color/whitecolor"
+            app:itemTextColor="@drawable/selector"
+            app:itemIconTint="@drawable/selector"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/menu_navigation">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@drawable/ic_arrow_back_black_24dp"
+                        android:id="@+id/back"
+                        android:layout_width="63dp"
+                        android:layout_height="43dp"
+                        android:layout_gravity="left" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+
+                            <com.github.mikephil.charting.charts.ScatterChart
+                                android:id="@+id/linechart"
+                                android:layout_width="320dp"
+                                android:layout_height="342dp"
+                                android:background="@android:color/white"
+                                android:layout_marginTop="10dp"></com.github.mikephil.charting.charts.ScatterChart>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal" >
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginHorizontal="40dp"
+                                    android:text="Weight:"
+                                    android:textColor="@color/orange"
+                                    android:gravity="center" />
+
+                                <TextView
+                                    android:layout_width="80dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginHorizontal="50dp"
+                                    android:text="Reps:"
+                                    android:textColor="@color/orange"
+                                    android:gravity="center" />
+                            </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+                            <EditText
+                                android:id="@+id/txt_SQUAT99"
+                                android:layout_width="100dp"
+                                android:layout_height="35dp"
+                                android:layout_marginHorizontal="40dp"
+                                android:hint="SQUAT"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:digits="1234567890"
+                                android:textColorHint="@color/greycolor"
+                                android:elevation="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/btn5" />
+
+                            <EditText
+                                android:id="@+id/txt_SQUATREPS99"
+                                android:layout_width="80dp"
+                                android:layout_height="35dp"
+                                android:layout_marginHorizontal="50dp"
+                                android:hint="REPS"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:digits="1234567890"
+                                android:textColorHint="@color/greycolor"
+                                android:elevation="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/btn5" />
+                        </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal" >
+                                <EditText
+                                    android:id="@+id/txt_DEADLIFT99"
+                                    android:layout_width="100dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginHorizontal="40dp"
+                                    android:hint="DEADLIFT"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:digits="1234567890"
+                                    android:textColorHint="@color/greycolor"
+                                    android:elevation="5dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/btn5" />
+
+                                <EditText
+                                    android:id="@+id/txt_DEADLIFTREPS99"
+                                    android:layout_width="80dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginHorizontal="50dp"
+                                    android:hint="REPS"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:digits="1234567890"                                    android:textColorHint="@color/greycolor"
+                                    android:elevation="5dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/btn5" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal" >
+                                <EditText
+                                    android:id="@+id/txt_BENCH99"
+                                    android:layout_width="100dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginHorizontal="40dp"
+                                    android:hint="BENCH"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:digits="1234567890"
+                                    android:textColorHint="@color/greycolor"
+                                    android:elevation="5dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/btn5" />
+
+                                <EditText
+                                    android:id="@+id/txt_BENCHREPS99"
+                                    android:layout_width="80dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginHorizontal="50dp"
+                                    android:hint="REPS"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:digits="1234567890"
+                                    android:textColorHint="@color/greycolor"
+                                    android:elevation="5dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/btn5" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/addWorkout99"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="280dp"
+                        android:layout_height="45dp"
+                        android:textColor="@color/whitecolor"
+                        android:background="@drawable/btn4"
+                        android:elevation="5dp"
+                        android:text="Add Workout Info"/>
+
+                    <Button
+                        android:id="@+id/delWorkout"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="280dp"
+                        android:layout_height="45dp"
+                        android:textColor="@color/whitecolor"
+                        android:background="@drawable/joinbtn"
+                        android:layout_marginBottom="100dp"
+                        android:elevation="5dp"
+                        android:text="Delete Workout Info"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>
