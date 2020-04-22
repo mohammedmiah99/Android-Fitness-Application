@@ -51,28 +51,29 @@ public class PTActivity extends AppCompatActivity {
             }
         });
 
+        ref.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for (DataSnapshot childSnapshot: dataSnapshot.getChildren()) {
+                    String key=childSnapshot.getKey();
+                    af.add(key);
+                }                    }
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
         btn_ppl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ref.addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        for (DataSnapshot childSnapshot: dataSnapshot.getChildren()) {
-                            String key=childSnapshot.getKey();
-                            af.add(key);
-                        }                    }
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError databaseError) {
-
-                    }
-                });
-                final String id = txt_IDpt.getText().toString();
-                if(!id.isEmpty()&& af.contains(id)){
+                final String id = txt_IDpt.getText().toString().trim();
+                if(af.contains(id)){
                     reference = FirebaseDatabase.getInstance().getReference().child("User").child(id);
                     reference.child("special").setValue("PPL6");
                     txt_IDpt.setText("");
                     startActivity(new Intent(getApplicationContext(), HomeActivity.class));
-                }else if (id.isEmpty()|| !af.contains(id)){
+                }else{
                     txt_IDpt.setError("Please enter a correct ID");
                     txt_IDpt.requestFocus();
                 }
@@ -83,25 +84,13 @@ public class PTActivity extends AppCompatActivity {
         btn_ppl3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ref.addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        for (DataSnapshot childSnapshot: dataSnapshot.getChildren()) {
-                            String key=childSnapshot.getKey();
-                            af.add(key);
-                        }                    }
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError databaseError) {
-
-                    }
-                });
-                final String id = txt_IDpt.getText().toString();
-                if(!id.isEmpty()&& af.contains(id)){
+                final String id = txt_IDpt.getText().toString().trim();
+                if(af.contains(id)){
                     reference = FirebaseDatabase.getInstance().getReference().child("User").child(id);
                     reference.child("special").setValue("PPL3");
                     txt_IDpt.setText("");
                     startActivity(new Intent(getApplicationContext(), HomeActivity.class));
-                }else if (id.isEmpty()|| !af.contains(id)){
+                }else{
                     txt_IDpt.setError("Please enter a correct ID");
                     txt_IDpt.requestFocus();
                 }
@@ -112,25 +101,13 @@ public class PTActivity extends AppCompatActivity {
         btn_UL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ref.addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        for (DataSnapshot childSnapshot: dataSnapshot.getChildren()) {
-                            String key=childSnapshot.getKey();
-                            af.add(key);
-                        }                    }
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError databaseError) {
-
-                    }
-                });
-                final String id = txt_IDpt.getText().toString();
-                if(!id.isEmpty()&& af.contains(id)){
+                final String id = txt_IDpt.getText().toString().trim();
+                if(af.contains(id)){
                     reference = FirebaseDatabase.getInstance().getReference().child("User").child(id);
                     reference.child("special").setValue("UL4");
                     txt_IDpt.setText("");
                     startActivity(new Intent(getApplicationContext(), HomeActivity.class));
-                }else if (id.isEmpty()|| !af.contains(id)){
+                }else{
                     txt_IDpt.setError("Please enter a correct ID");
                     txt_IDpt.requestFocus();
                 }
