@@ -15,7 +15,7 @@
         android:orientation="vertical"
         android:gravity="center">
         <ImageView
-            android:src="@drawable/ic_arrow_back_black_24dp"
+            app:srcCompat="@drawable/ic_arrow_back_black_24dp"
             android:id="@+id/btn_back98"
             android:layout_width="63dp"
             android:layout_height="43dp"
@@ -38,7 +38,7 @@
         <ListView
             android:id="@+id/listviewNote"
             android:layout_width="match_parent"
-            android:layout_height="445dp"
+            android:layout_height="395dp"
             android:hint=" Title"
             android:paddingLeft="15dp"
             android:inputType="text"
@@ -56,6 +56,16 @@
             android:layout_marginTop="10dp"
             android:elevation="5dp"
             android:background="@drawable/btn4"/>
+        <Button
+            android:id="@+id/btn_del"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:text="Delete your Posts"
+            android:textColor="@color/whitecolor"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:elevation="5dp"
+            android:background="@drawable/joinbtn"/>
 
     </LinearLayout>
 

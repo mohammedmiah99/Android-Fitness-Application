@@ -54,9 +54,9 @@
         <item>PULL YOUR ELBOWS DOWN AND IN, MINIMIZE SWINGING. REST: 2-3 MINS, RPE/%1RM: 8</item>
         <item>PULL YOUR ELBOW BACK AND IN. ONE ARM</item>
         <item>PULL ELBOWS DOWN AND IN. RETRACT YOUR SCAPULAE</item>
-        <item>A1: SUPERSET WITH A2, A3, NO REST IN BETWEEN</item>
-        <item>A2: SUPERSET WITH A3, NO REST IN BETWEEN</item>
-        <item>A3: NOW REST AND REPEAT</item>
+        <item>ARCH THE DUMBBELL "OUT", NOT "UP". FOCUS ON SQUEEZING YOUR FOREARMS</item>
+        <item>ARCH THE DUMBBELL "OUT", NOT "UP". FOCUS ON SQUEEZING YOUR FOREARMS</item>
+        <item>ARCH THE DUMBBELL "OUT", NOT "UP". FOCUS ON SQUEEZING YOUR BICEPS</item>
     </string-array>
 
     <string-array name="sets">
@@ -79,11 +79,11 @@
 
     <string-array name="timer">
         <item>"120000"</item>
-        <item>"5000"</item>
-        <item>"5000"</item>
-        <item>"5000"</item>
-        <item>"5000"</item>
-        <item>"5000"</item>
+        <item>"120000"</item>
+        <item>"60000"</item>
+        <item>"60000"</item>
+        <item>"60000"</item>
+        <item>"60000"</item>
     </string-array>
 
     <string-array name="exercisesLeg">

@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -25,6 +26,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
@@ -32,16 +34,17 @@ import java.util.ArrayList;
 public class BlogActivity extends AppCompatActivity {
 
     private EditText searchfilter;
-    private Button btn_submit;
+    private Button btn_submit, btn_del;
     private ImageView btnBack98;
     private ListView listView;
     FirebaseAuth auth;
     FirebaseUser user;
-    DatabaseReference reference;
+    DatabaseReference reference, reference11, reference12;
     private ArrayList<String> arrayList = new ArrayList<>();
     private ArrayList<String> al = new ArrayList<>();
     private ArrayList<String> a2 = new ArrayList<>();
     private ArrayList<String> a3 = new ArrayList<>();
+    String emailchange;
 
     private ArrayAdapter<String> adapter;
 
@@ -50,12 +53,28 @@ public class BlogActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_blog);
 
+        btn_del = findViewById(R.id.btn_del);
         searchfilter = findViewById(R.id.searchfilter);
         btnBack98 = findViewById(R.id.btn_back98);
         btn_submit = findViewById(R.id.btn_submit);
         listView = findViewById(R.id.listviewNote);
         reference = FirebaseDatabase.getInstance().getReference("blog");
         adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,arrayList);
+
+        auth = FirebaseAuth.getInstance();
+        user = auth.getCurrentUser();
+        reference11 = FirebaseDatabase.getInstance().getReference().child("User").child(user.getUid());
+        reference11.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                emailchange = dataSnapshot.child("email").getValue().toString();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
 
         reference.addValueEventListener(new ValueEventListener() {
             @Override
@@ -125,6 +144,30 @@ public class BlogActivity extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable s) {
+
+            }
+        });
+        btn_del.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DatabaseReference ref = FirebaseDatabase.getInstance().getReference();
+                Query query = ref.child("blog").orderByChild("email").equalTo(emailchange);
+
+                query.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        for (DataSnapshot Snapshot: dataSnapshot.getChildren()) {
+                            Snapshot.getRef().removeValue();
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });
+                Intent intToMain = new Intent(BlogActivity.this, HomeActivity.class);
+                startActivity(intToMain);
 
             }
         });
