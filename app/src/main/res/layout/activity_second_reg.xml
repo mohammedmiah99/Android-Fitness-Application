@@ -10,7 +10,7 @@
     tools:context=".SecondRegActivity">
 
     <LinearLayout
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="80dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -24,12 +24,24 @@
             android:textColor="@color/blackcolor"
             android:textSize="25dp"
             android:textStyle="bold"/>
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/imperialButton12"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:textOff="Metric"
+            android:textOn="Imperial"
+            android:thumb="@drawable/sw_thumb"
+            android:textColor="@color/greycolor"
+            android:textAllCaps="false"
+            app:track="@drawable/sw_track"
+            app:showText="true"
+            android:layout_marginTop="15dp" />
         <EditText
             android:id="@+id/txt_age"
             android:layout_width="280dp"
             android:layout_height="45dp"
             android:hint=" Age"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="5dp"
             android:paddingLeft="15dp"
             android:inputType="number"
             android:textColorHint="@color/greycolor"
@@ -53,7 +65,7 @@
             android:hint=" Your Height (cm)"
             android:layout_marginTop="10dp"
             android:paddingLeft="15dp"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:textColorHint="@color/greycolor"
             android:elevation="5dp"
             android:background="@drawable/btn"
@@ -80,6 +92,7 @@
             android:layout_marginTop="25dp"
             android:elevation="5dp"
             android:background="@drawable/joinbtn"/>
+
 
     </LinearLayout>
 
