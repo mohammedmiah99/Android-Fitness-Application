@@ -27,7 +27,7 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:src="@drawable/ic_arrow_back_black_24dp"
+                app:srcCompat="@drawable/ic_arrow_back_black_24dp"
                 android:id="@+id/back"
                 android:layout_width="63dp"
                 android:layout_height="43dp"

@@ -84,8 +84,6 @@ public class ThirdRegActivity extends AppCompatActivity {
                         .setValue(information).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
-                        Toast.makeText(ThirdRegActivity.this, "Reg complete", Toast.LENGTH_SHORT).show();
-                        //startActivity(new Intent(getApplicationContext(), ThirdRegActivity.class));
                         Intent i = new Intent(ThirdRegActivity.this,HomeActivity.class);
                         startActivity(i);
 
