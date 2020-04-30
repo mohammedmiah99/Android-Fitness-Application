@@ -73,34 +73,8 @@ private EditText editFName,editLName,editAge,editHeight, editWeight;
                 final String newFName = editFName.getText().toString();
                 final String newLName = editLName.getText().toString();
                 final String newAge = editAge.getText().toString();
-                //final String newWeight = editWeight.getText().toString();
-                //final String newHeight = editHeight.getText().toString();
                 String newWeight="";
                 String newHeight="";
-
-              /*  if (b.equals("true")){
-                    double d = Double.parseDouble(editWeight.getText().toString())/2.205;
-                    int y = (int) Math.round(d);
-                    newWeight = Integer.toString(y);
-
-                    double dx = Double.parseDouble(editHeight.getText().toString())*30.48;
-                    int yx = (int) Math.round(dx);
-                    newHeight = Integer.toString(yx);
-
-                }
-                else if (b.equals("false")){
-                    newWeight = editWeight.getText().toString().trim();
-
-                    if(!editHeight.getText().toString().trim().isEmpty()){
-                        double ddd = Double.parseDouble(editHeight.getText().toString().trim());
-                        int gg = (int) Math.round(ddd);
-                        newHeight = Integer.toString(gg);
-                    }
-                }
-
-               */
-
-
 
                 auth = FirebaseAuth.getInstance();
                 user = auth.getCurrentUser();

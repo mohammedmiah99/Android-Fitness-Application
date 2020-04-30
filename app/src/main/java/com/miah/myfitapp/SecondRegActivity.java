@@ -46,12 +46,7 @@ public class SecondRegActivity extends AppCompatActivity {
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*final String age1 = age.getText().toString();
-                final String height1 = height.getText().toString();
-                String weight1 = weight.getText().toString();
-                final String gender1 = spinGender.getSelectedItem().toString();
 
-                 */
                 String weight1="";
                 String height1="";
                 final String age1 = age.getText().toString();

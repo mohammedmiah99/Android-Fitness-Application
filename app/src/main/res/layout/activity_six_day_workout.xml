@@ -27,7 +27,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:src="@drawable/ic_arrow_back_black_24dp"
+            app:srcCompat="@drawable/ic_arrow_back_black_24dp"
             android:id="@+id/back"
             android:layout_width="63dp"
             android:layout_height="43dp"
@@ -92,7 +92,6 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- Column 2 -->
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -122,7 +121,6 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- Row 2 -->
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -151,9 +149,6 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- Column 1 -->
-
-            <!-- Column 2 -->
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -185,10 +180,6 @@
 
             </androidx.cardview.widget.CardView>
 
-
-            <!-- Row 2 -->
-
-            <!-- Column 1 -->
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -218,7 +209,6 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- Column 2 -->
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -247,10 +237,6 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
-
-            <!--        column 1-->
-
-
 
         </GridLayout>
 
